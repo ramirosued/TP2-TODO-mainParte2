@@ -3,6 +3,8 @@ import './App.css';
 import Titulo from './components/Titulo/Titulo';
 import Form from './components/Form/Form';
 import Tarea from './components/Tarea/Tarea';
+import Botones from './components/Botones/Botones';
+import Subtitulo from './components/Subtitulo/Subtitulo';
 function App() {
   const[tareas, setTareas] = useState([])
   return (
@@ -14,7 +16,11 @@ function App() {
     tareas.map(t => <Tarea tareas={tareas} setTareas={setTareas} id={t.id} texto={t.texto}/>)
   }
 </ul>
-      
+<Subtitulo texto={'Tarea mas rapida realizada'}></Subtitulo>
+{
+      tareas.map(t => <Tarea tareas={tareas} setTareas={setTareas} id={t.id} texto={t.texto}/>)
+
+}
 </>
   );
 }

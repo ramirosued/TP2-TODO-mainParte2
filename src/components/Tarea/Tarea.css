@@ -1,10 +1,4 @@
-.tarjeta {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.tarjeta li {
+li {
     background-color: #ff7b00;
     padding: 10px;
     margin-bottom: 5px;
@@ -13,4 +7,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.rojo{
+   text-decoration: line-through;
+}
+
+.verde{
+    text-decoration: none;
 }
