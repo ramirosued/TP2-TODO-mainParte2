@@ -12,6 +12,8 @@ function Form({setTareas,tareas}) {
             {
                 id: Date.now(),
                 texto: e.target.texto.value,
+                tiempo:0,
+                completada: true,
             }
         ])
         e.target.reset();

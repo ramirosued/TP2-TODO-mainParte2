@@ -1,5 +1,5 @@
 function Subtitulo({texto}){
-return(<button>{texto}</button>)
+return(texto)
 }
 
 export default Subtitulo
