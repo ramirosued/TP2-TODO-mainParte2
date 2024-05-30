@@ -26,8 +26,8 @@ function Tarea({tareas, setTareas,id,texto}){
 
     return (
         <div className="div">
-            <li className={tachado === false ? 'rojo' : 'verde'} onClick={tacharTarea}>{texto}</li> 
-            <button onClick={eliminarTarea} type="button">ELIMINAR x</button>
+            <li className={tachado === false ? 'rojo' : 'verde'} onClick={tacharTarea}>{texto}  <button className="botonEliminar" onClick={eliminarTarea} type="button" > <img src="https://cdn-icons-png.flaticon.com/512/1214/1214594.png"/></button>
+</li> 
 
                 </div>
         )

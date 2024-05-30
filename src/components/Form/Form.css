@@ -1,0 +1,28 @@
+.form{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.texto{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+
+
+.agregar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agregar:hover {
+    background-color: #0056b3;
+}

@@ -1,7 +1,9 @@
 
 import React from "react";
 
-function Botones({ tareas }) {
+import'./Botones.css';
+
+function Botones({tareas}) {
     // Función para encontrar la tarea que tomó menos tiempo
     const encontrarTareaMasRapida = () => {
         // Filtra las tareas completadas que tienen tiempo registrado
@@ -20,7 +22,7 @@ function Botones({ tareas }) {
 
     const mostrarTareaMasRapida = () => {
         if (tareaMasRapida) {
-            <h1>La tarea más rápida realizada es: ${tareaMasRapida.texto}</h1>;
+            alert(`La tarea más rápida realizada es: ${tareaMasRapida.texto}`);
         } else {
             alert("No se ha completado ninguna tarea aún.");
         }
@@ -28,7 +30,8 @@ function Botones({ tareas }) {
 
     return (
         <div>
-            <button onClick={mostrarTareaMasRapida}>Tarea más rápida realizada</button>
+            <button className="botonTiempo" onClick={mostrarTareaMasRapida}>Tarea más rápida realizada</button>
+
         </div>
     );
 }
